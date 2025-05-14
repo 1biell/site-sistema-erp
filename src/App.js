@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Sobre from './components/Sobre';
+import Funcionalidades from './components/Funcionalidades';
+import Precos from './components/Precos';
+import Contato from './components/Contato';
+import './styles/global.css';
+import './styles/Footer.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Sobre />
+      <Funcionalidades />
+      <Precos />
+      <Contato />
     </div>
+  );
+}
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>&copy; 2025 Meu Sistema ERP. Todos os direitos reservados.</p>
+    </footer>
   );
 }
 
