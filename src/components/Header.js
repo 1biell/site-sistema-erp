@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Header.css'; // Vamos adicionar o CSS depois
+import '../styles/Header.css';
 
 const Header = () => {
   return (
@@ -7,10 +7,10 @@ const Header = () => {
       <div className="container">
         <h1>Meu Sistema ERP</h1>
         <nav>
-          <a href="#sobre">Sobre</a>
-          <a href="#funcionalidades">Funcionalidades</a>
-          <a href="#precos">Preços</a>
-          <a href="#contato">Contato</a>
+          <a href="/sobre" target="_blank" rel="noopener noreferrer">Sobre</a>
+          <a href="/funcionalidades" target="_blank" rel="noopener noreferrer">Funcionalidades</a>
+          <a href="/precos" target="_blank" rel="noopener noreferrer">Preços</a>
+          <a href="/contato" target="_blank" rel="noopener noreferrer">Contato</a>
         </nav>
       </div>
     </header>
